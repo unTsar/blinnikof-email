@@ -87,14 +87,12 @@ body .emailWhite-wrapper .emailWhite__container {
 
 body .emailWhite-wrapper .emailWhite__container_white {
   background-color: #ffffff;
-  -webkit-border-radius: 15px;
-          border-radius: 15px;
+  border-radius: 15px;
 }
 
 body .emailWhite-wrapper .emailWhite-header .emailWhite-headerTop {
   background-image: url("../img/email-white/email-white__header-bg.png");
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -176,8 +174,7 @@ body .emailWhite-wrapper .emailWhite-header .emailWhite-headerContent .emailWhit
 
 body .emailWhite-wrapper .emailWhite-header .emailWhite-headerContent .emailWhite-headerContent__container .emailWhite-headerContent__button {
   background-color: #ff2e2f;
-  -webkit-border-radius: 35px;
-          border-radius: 35px;
+  border-radius: 35px;
   width: 270px;
   padding-top: 27.5px;
   padding-bottom: 27.5px;
@@ -248,10 +245,8 @@ body .emailWhite-wrapper .emailWhite-main .emailWhite-main__inf .emailWhite-main
 body .emailWhite-wrapper .emailWhite-main .emailWhite-main__inf .emailWhite-main__container .emailWhite-main__order .emailWhite-main__list .emailWhite-main__topLine {
   padding-left: 40px;
   background-color: #3B3B3B;
-  -webkit-border-top-left-radius: 15px;
-          border-top-left-radius: 15px;
-  -webkit-border-top-right-radius: 15px;
-          border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -353,10 +348,8 @@ body .emailWhite-wrapper .emailWhite-main .emailWhite-main__inf .emailWhite-main
 body .emailWhite-wrapper .emailWhite-main .emailWhite-main__inf .emailWhite-main__container .emailWhite-main__schedule .emailWhite-main__list .emailWhite-main__topLine {
   padding-left: 40px;
   background-color: #3B3B3B;
-  -webkit-border-top-left-radius: 15px;
-          border-top-left-radius: 15px;
-  -webkit-border-top-right-radius: 15px;
-          border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
