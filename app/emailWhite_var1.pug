@@ -15,83 +15,197 @@ html(lang="ru")
 
 		link(rel="stylesheet", href="css/emailWhite_var1.css")
 	body
-		.emailWhite-wrapper
-			.emailWhite-header
-				img.emailWhite-header__header-bg(src="img/emailWhite/emailWhite__header-bg.png", alt="email-white__header-bg.png")
-				.emailWhite-headerTop
-					.emailWhite__container.emailWhite-headerTop__container
-						img.emailWhite-headerTop__logo(src="img/emailWhite/emailWhite-logo.png", alt="emailWhite-logo.png")
-						.emailWhite__socials.emailWhite-headerTop__socials
-							a.emailWhite__social.emailWhite-headerTop__social(href="#")
-								img.emailWhite__imgSocial.emailWhite-headerTop__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial1.png", alt="emailWhite-headerTop__imgSocial1.png")
-							a.emailWhite__social.emailWhite-headerTop__social(href="#")
-								img.emailWhite__imgSocial.emailWhite-headerTop__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial2.png", alt="emailWhite-headerTop__imgSocial2.png")
-							a.emailWhite__social.emailWhite-headerTop__social(href="#")
-								img.emailWhite__imgSocial.emailWhite-headerTop__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial3.png", alt="emailWhite-headerTop__imgSocial3.png")
-			.emailWhite-genInf
-				.emailWhite__container.emailWhite-genInf__container
-					.emailWhite-genInf__headOuter
-						h1.emailWhite-genInf__h1 Заказ #20903
-						.emailWhite-genInf__line
-					.emailWhite-genInf__subhead
-						span.emailWhite-genInf__span Спасибо за Ваш заказ, Admin System 
-					.emailWhite-genInf__desc
-						.emailWhite-genInf__line
-						p.emailWhite-genInf__text|Обращаем ваше внимание, что подача заявки не бронирует место в группе. Запись в группу происходит #[a.emailWhite__link.emailWhite-genInf-link(href="#") только после оплаты]
-							br
-							|Пожалуйста, если у вас есть вопросы, свяжитесь с нами. Когда вы будете готовы, можете оплатить заказ в личном кабинете или по ссылке:
-					a.emailWhite-genInf__buttonPay(href="#") ПЕРЕЙТИ К ОПЛАТЕ
-			.emailWhite-order
-				.emailWhite__container.emailWhite-order__container
-					.emailWhite__headOuter.emailWhite-order__headOuter 
-						h1.emailWhite__h1.emailWhite-order__h1 Заказ
-						.emailWhite__line.emailWhite-order__line
-					table.emailWhite-order__table
+		table.emailWhite-wrapper
+			tr
+				td
+					table(style="width: 100%").emailWhite-header
 						tr
-							th.emailWhite-order__tableCell.emailWhite-order__col1 Название урока
-							th.emailWhite-order__tableCell.emailWhite-order__col2 Группа
-							th.emailWhite-order__tableCell.emailWhite-order__col3 Стоимость, руб.
+							td.emailWhite-headerTop
+								table(align="center").emailWhite__container.emailWhite-headerTop__container
+									td
+										img.emailWhite-headerTop__logo(src="img/emailWhite/emailWhite-logo.png", alt="emailWhite-logo.png")
+									td(align='right').emailWhite__socials.emailWhite-headerTop__socials
+										a.emailWhite-headerTop__social(href="#")
+											img.emailWhite__imgSocial.emailWhite-headerTop__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial_circle1.png", alt="emailWhite-headerTop__imgSocial_circle1.png")
+										a.emailWhite-headerTop__social(href="#")
+											img.emailWhite__imgSocial.emailWhite-headerTop__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial_circle2.png", alt="emailWhite-headerTop__imgSocial_circle2.png")
+										a.emailWhite-headerTop__social(href="#")
+											img.emailWhite__imgSocial.emailWhite-headerTop__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial_circle3.png", alt="emailWhite-headerTop__imgSocial_circle3.png")
+
+					table(style="width: 100%").emailWhite-genInf
 						tr
-							td.emailWhite-order__tableCell.emailWhite-order__col1 Абонемент 4
-							td.emailWhite-order__tableCell.emailWhite-order__col2 Группа 1
-							td.emailWhite-order__tableCell.emailWhite-order__col3 3 000,00 руб.
+							td
+								table(align="center").emailWhite__container.emailWhite-genInf__container
+									tr
+										td(colspan="2")
+											.emailWhite-genInf__headOuter.emailWhite__headOuter
+												h1.emailWhite__h1.emailWhite-genInf__h1 Заказ #20903
+												.emailWhite__line.emailWhite-genInf__line
+									tr
+										td(colspan="2").emailWhite-genInf__subhead
+											span.emailWhite-genInf__span Спасибо за Ваш заказ, Admin System 
+									tr.emailWhite-genInf__desc
+										td(colspan="1")
+											.emailWhite-genInf__line
+										td(colspan="1")
+											p.emailWhite-genInf__text|Обращаем ваше внимание, что подача заявки не бронирует место в группе. Запись в группу происходит #[a.emailWhite__link.emailWhite-genInf-link(href="#") только после оплаты]
+												br
+												|Пожалуйста, если у вас есть вопросы, свяжитесь с нами. Когда вы будете готовы, можете оплатить заказ в личном кабинете или по ссылке:
+									tr
+										td(colspan="2")
+											a.emailWhite-genInf__buttonPay(href="#") ПЕРЕЙТИ К ОПЛАТЕ
+					table(style="width: 100%").emailWhite-order
 						tr
-							td.emailWhite-order__tableCell.emailWhite-order__col1 Абонемент 5
-							td.emailWhite-order__tableCell.emailWhite-order__col2 Группа 1
-							td.emailWhite-order__tableCell.emailWhite-order__col3 4 000,00 руб.
-					.emailWhite-order__result
-						.emailWhite-order__line_red
-						span.emailWhite-order__span #[span.emailWhite-order__span_bold Итого:] 7 000,00 руб.
-			.emailWhite-schedule
-				.emailWhite__container.emailWhite-schedule__container
-					.emailWhite__headOuter.emailWhite-schedule__headOuter 
-						h1.emailWhite__h1.emailWhite-schedule__h1 Расписание занятий
-						.emailWhite__line.emailWhite-schedule__line
-			.emailWhite-profile
-				.emailWhite__container.emailWhite-profile__container
-					.emailWhite__headOuter.emailWhite-profile__headOuter 
-						h1.emailWhite__h1.emailWhite-profile__h1 Личный кабинет
-						.emailWhite__line.emailWhite-profile__line
-			.emailWhite-contacts
-				.emailWhite__container.emailWhite-contacts__container
-					.emailWhite__headOuter.emailWhite-contacts__headOuter 
-						h1.emailWhite__h1.emailWhite-contacts__h1 Контактная информация
-						.emailWhite__line.emailWhite-contacts__line
-			.emailWhite-footer
-				.emailWhite__container.emailWhite-footer__container
-					.emailWhite-footer__textOuter
-						p.emailWhite-footer__text|Вы получили это письмо, потому что 
-							br
-							|Ваш email был указан 
-							br
-							|на сайте #[a.emailWhite-footer__link(href="#") www.v-concept.ru]
-						.emailWhite-footer__copyText
-							span.emailWhite-footer__span &copy; 2018 www.v-concept.ru
-					.emailWhite__socials.emailWhite-footer__socials
-						a.emailWhite__social.emailWhite-footer__social(href="#")
-							img.emailWhite__imgSocial.emailWhite-footer__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial1_red.png", alt="emailWhite-headerTop__imgSocial1_red.png")
-						a.emailWhite__social.emailWhite-footer__social(href="#")
-							img.emailWhite__imgSocial.emailWhite-footer__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial2_red.png", alt="emailWhite-headerTop__imgSocial2_red.png")
-						a.emailWhite__social.emailWhite-footer__social(href="#")
-							img.emailWhite__imgSocial.emailWhite-footer__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial3_red.png", alt="emailWhite-headerTop__imgSocial3_red.png")
+							td
+								table(align="center").emailWhite__container.emailWhite-order__container
+									tr
+										td
+											.emailWhite__headOuter.emailWhite-order__headOuter 
+												h1.emailWhite__h1.emailWhite-order__h1 Заказ
+												.emailWhite__line.emailWhite-order__line
+									tr
+										td
+											table.emailWhite-order__table
+												tr
+													th.emailWhite-order__tableCell.emailWhite-order__col1 Название урока
+													th.emailWhite-order__tableCell.emailWhite-order__col2 Группа
+													th.emailWhite-order__tableCell.emailWhite-order__col3 Стоимость, руб.
+												tr
+													td.emailWhite-order__tableCell.emailWhite-order__col1 Абонемент 4
+													td.emailWhite-order__tableCell.emailWhite-order__col2 Группа 1
+													td.emailWhite-order__tableCell.emailWhite-order__col3 3 000,00 руб.
+												tr
+													td.emailWhite-order__tableCell.emailWhite-order__col1 Абонемент 5
+													td.emailWhite-order__tableCell.emailWhite-order__col2 Группа 1
+													td.emailWhite-order__tableCell.emailWhite-order__col3 4 000,00 руб.
+									tr
+										td.emailWhite-order__result
+											.emailWhite-order__line_red
+											span.emailWhite-order__span #[span.emailWhite-order__span_bold Итого:] 7 000,00 руб.
+					table(style="width: 100%").emailWhite-schedule
+						tr
+							td
+								table(align="center").emailWhite__container.emailWhite-schedule__container
+									tr
+										td
+											.emailWhite__headOuter.emailWhite-schedule__headOuter 
+												h1.emailWhite__h1.emailWhite-schedule__h1 Расписание занятий
+												.emailWhite__line.emailWhite-schedule__line
+									tr
+										td
+											table.emailWhite-schedule__table
+												tr
+													th.emailWhite-schedule__tableCell.emailWhite-schedule__col1 Дата / Время
+													th.emailWhite-schedule__tableCell.emailWhite-schedule__col2 Занятие
+													th.emailWhite-schedule__tableCell.emailWhite-schedule__col3 Тренер
+												tr
+													td.emailWhite-schedule__tableCell.emailWhite-schedule__col1 30.11.2018,  19:00  ПТ 
+													td.emailWhite-schedule__tableCell.emailWhite-schedule__col2 «LadyFit 17»
+													td.emailWhite-schedule__tableCell.emailWhite-schedule__col3 Рита Цыркуль
+												tr
+													td.emailWhite-schedule__tableCell.emailWhite-schedule__col1 01.12.2018,  10:00  СБ
+													td.emailWhite-schedule__tableCell.emailWhite-schedule__col2 «Тайский Бокс 17»
+													td.emailWhite-schedule__tableCell.emailWhite-schedule__col3 Руслан Бареев
+												tr
+													td.emailWhite-schedule__tableCell.emailWhite-schedule__col1 02.12.2018,  11:00  ВС 
+													td.emailWhite-schedule__tableCell.emailWhite-schedule__col2 «Ягодицы+Ноги+Пресс 17»
+													td.emailWhite-schedule__tableCell.emailWhite-schedule__col3 Таня Крекшина
+												tr
+													td.emailWhite-schedule__tableCell.emailWhite-schedule__col1 04.12.2018,  19:00  ВТ
+													td.emailWhite-schedule__tableCell.emailWhite-schedule__col2 «LadyFit 21»
+													td.emailWhite-schedule__tableCell.emailWhite-schedule__col3 Рита Цыркуль
+									tr
+										td
+											p.emailWhite-schedule__text После оплаты Вы сможете перенести тренировку на другой день при наличии свободных мест в #[a.emailWhite__link.emailWhite-schedule__link(href="") личном кабинете], но не позднее, чем за один день до начала занятия.
+					table(style="width: 100%").emailWhite-profile
+						tr
+							td
+								table(align="center").emailWhite__container.emailWhite-profile__container
+									tr
+										td
+											.emailWhite__headOuter.emailWhite-profile__headOuter 
+												h1.emailWhite__h1.emailWhite-profile__h1 Личный кабинет
+												.emailWhite__line.emailWhite-profile__line
+									tr
+										td(style="padding-top: 40px; line-height: 1.3")
+											.emailWhite-profile__text #[span.emailWhite-profile__span_bold Адрес:] #[a.emailWhite__link.emailWhite-profile__link(href="") https://www.v-concept.ru/login]
+											.emailWhite-profile__text #[span.emailWhite-profile__span_bold Логин:] admin
+											.emailWhite-profile__text #[span.emailWhite-profile__span_bold Пароль:] guest123
+
+
+					table(style="width: 100%").emailWhite-contacts
+						tr
+							td
+								table(align="center").emailWhite__container.emailWhite-contacts__container
+									tr
+										td
+											.emailWhite__headOuter.emailWhite-contacts__headOuter 
+												h1.emailWhite__h1.emailWhite-contacts__h1 Контактная информация
+												.emailWhite__line.emailWhite-contacts__line
+									tr
+										td(style="padding-top: 40px; line-height: 1.3")
+											.emailWhite-contacts__text #[span.emailWhite-contacts__span_bold Фамилия:] admin
+											.emailWhite-contacts__text #[span.emailWhite-contacts__span_bold Имя:] system
+											.emailWhite-contacts__text #[span.emailWhite-contacts__span_bold Email:] #[a.emailWhite__link.emailWhite-contacts__link_underlined(href="mailto:blinnikoff@mail.ru") blinnikoff@mail.ru]
+											.emailWhite-contacts__text #[span.emailWhite-contacts__span_bold Телефон:] #[a.emailWhite__link.emailWhite-contacts__link(href="tel:+7 (906) 099-80-80") +7 (906) 099-80-80]
+									tr
+										td(style="padding-top: 40px;")
+											p.emailWhite-contacts__dopText Если у вас возникают вопросы, пожалуйста, напишите нам на почту или позвоните.
+									tr
+										td(style="padding-top: 30px;")
+											p.emailWhite-contacts__dopText|Мы всегда с Вами.
+												br
+												|Ваша команда #[span.emailWhite-contacts__dopText_bold V_CONCEPT]
+												br
+												|#[span.emailWhite-contacts__dopText_bold Время работы: каждый день с 12-20]
+					table(style="width: 100%; margin-top: 15px; padding-top: 120px").emailWhite-map
+						tr
+							td
+								table(align="center").emailWhite__container.emailWhite-map__container
+									tr
+										td.emailWhite-map__col1
+											img(src="img/emailWhite/emailWhite-map__icon1.png", alt="emailWhite-map__icon1.png" style="margin-top: 5px")
+										td
+											.emailWhite-map__text_bold +7 (499)-125-32-25
+									tr
+										td.emailWhite-map__col1
+											img(src="img/emailWhite/emailWhite-map__icon2.png", alt="emailWhite-map__icon2.png")
+										td
+											.emailWhite-map__text|Москва, Звенигородское
+												br
+												|шоссе, 3
+									tr
+										td.emailWhite-map__col1
+											img(src="img/emailWhite/emailWhite-map__icon3.png", alt="emailWhite-map__icon3.png")
+										td
+											.emailWhite-map__text info@v-concept.ru
+									tr
+										td.emailWhite-map__col1
+											img(src="img/emailWhite/emailWhite-map__icon4.png", alt="emailWhite-map__icon4.png")
+										td
+											.emailWhite-map__text|Время работы: 10:00-20:00
+												br
+												|(в выходные 10:00-17:00)
+					table(style="width: 100%").emailWhite-footer
+						tr
+							td
+								table(align="center").emailWhite__container.emailWhite-footer__container
+									td.emailWhite-footer__textOuter
+										p.emailWhite-footer__text|Вы получили это письмо, потому что 
+											br
+											|Ваш email был указан 
+											br
+											|на сайте #[a.emailWhite-footer__link(href="#") www.v-concept.ru]
+										.emailWhite-footer__copyText
+											span.emailWhite-footer__span &copy; 2018 www.v-concept.ru
+									td(align="right").emailWhite__socials.emailWhite-footer__socials
+										.emailWhite__social.emailWhite-footer__social
+											a(href="#" style="width: 100%; height: 100%;")
+												img.emailWhite__imgSocial.emailWhite-footer__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial1_red.png", alt="emailWhite-headerTop__imgSocial1_red.png")
+										.emailWhite__social.emailWhite-footer__social
+											a(href="#" style="width: 100%; height: 100%;")
+												img.emailWhite__imgSocial.emailWhite-footer__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial2_red.png", alt="emailWhite-headerTop__imgSocial2_red.png")
+										.emailWhite__social.emailWhite-footer__social
+											a(href="#" style="width: 100%; height: 100%;")
+												img.emailWhite__imgSocial.emailWhite-footer__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial3_red.png", alt="emailWhite-headerTop__imgSocial3_red.png")
 

@@ -9,13 +9,20 @@ body
 		outline: none
 		color: #ff2e2f
 	.emailWhite-wrapper
-		background-color: #F8F8F8
+		background-color: #F8F8F8 !important
 		max-width: 1000px
+		width: 100%
 		margin-top: 0
 		margin-bottom: 0
 		padding: 0
 		margin-left: auto
 		margin-right: auto
+		border-spacing: 0
+		table
+			border-spacing: 0
+			td, th, tr
+				padding: 0
+				margin: 0
 		.emailWhite__headOuter
 			white-space: nowrap
 			overflow: hidden
@@ -37,7 +44,6 @@ body
 				display: inline-block
 				vertical-align: middle
 		.emailWhite__socials
-			float: right
 			a.emailWhite__social
 				display: inline-block
 				text-align: center
@@ -51,23 +57,27 @@ body
 					display: inline-block
 					vertical-align: middle
 		.emailWhite__container
-			max-width: 600px
-			margin-left: auto
-			margin-right: auto
+			max-width: 600px !important
+			width: 100%
+			margin-left: auto !important
+			margin-right: auto !important
 		.emailWhite-header
-			position: relative
 			padding-bottom: 177px
-			img.emailWhite-header__header-bg
-				position: absolute
-				top: 0
-				left: 0
-				width: 100%
+			background-image: url('../img/emailWhite/emailWhite__header-bg.png')
+			background-size: cover
+			background-repeat: no-repeat
 			.emailWhite-headerTop
-				position: relative
 				padding-top: 35px
 				.emailWhite-headerTop__container
 					img.emailWhite-headerTop__logo
 						margin-top: 5px
+					.emailWhite-headerTop__socials
+						a.emailWhite-headerTop__social
+							display: inline-block
+							text-align: center
+							margin-left: 10px
+							width: 53px
+							height: 53px
 		.emailWhite-genInf
 			padding-top: 30px
 			.emailWhite-genInf__container
@@ -88,9 +98,6 @@ body
 						height: 1px
 						margin-top: 7.5px
 						margin-left: 10px
-					h1.emailWhite-genInf__h1, .emailWhite-genInf__line
-						display: inline-block
-						vertical-align: middle
 				.emailWhite-genInf__subhead
 					padding-top: 20px
 					span.emailWhite-genInf__span
@@ -100,9 +107,6 @@ body
 						color: #333333
 						letter-spacing: -0.5px
 				.emailWhite-genInf__desc
-					padding-top: 30px
-					white-space: nowrap
-					width: 100%
 					.emailWhite-genInf__line
 						width: 66px
 						height: 4px
@@ -115,9 +119,10 @@ body
 						color: #333333
 						letter-spacing: -0.5px
 						margin-left: 20px
-						max-width: 85%
+						max-width: 90%
 						white-space: normal
 					.emailWhite-genInf__line, p.emailWhite-genInf__text
+						margin-top: 30px
 						display: inline-block
 						vertical-align: middle
 				a.emailWhite-genInf__buttonPay
@@ -148,9 +153,7 @@ body
 					.emailWhite-order__line
 						margin-left: 17.5px
 				table.emailWhite-order__table
-					padding-top: 17.5px
-					padding-left: 10px
-					padding-right: 5px
+					margin-top: 17.5px
 					width: 100%
 					border-collapse: collapse
 					tr
@@ -160,10 +163,12 @@ body
 							padding-bottom: 17.5px
 						.emailWhite-order__col1
 							width: 50.6%
+							padding-left: 10px
 						.emailWhite-order__col2
 							width: 23.7%
 						.emailWhite-order__col3
 							width: 25.7%
+							padding-right: 5px
 						th
 							white-space: nowrap
 							text-align: left
@@ -179,7 +184,7 @@ body
 							color: #333333
 				.emailWhite-order__result
 					text-align: right
-					margin-top: 25px
+					padding-top: 25px
 					.emailWhite-order__line_red
 						width: 35px
 						height: 3px
@@ -197,8 +202,105 @@ body
 					.emailWhite-order__line_red, span.emailWhite-order__span
 						display: inline-block
 						vertical-align: middle
+		.emailWhite-schedule
+			.emailWhite-schedule__container
+				table.emailWhite-schedule__table
+					margin-top: 25px
+					width: 100% !important
+					tr
+						th
+							text-align: left !important
+							font-family: 'Verdana', sans-serif
+							font-weight: bold
+							font-size: 15px
+							color: #333333
+						td
+							font-family: 'Verdana', sans-serif
+							font-weight: normal
+							color: #333333
+							font-size: 15px
+						th, td
+							letter-spacing: -1px
+							padding-top: 10px
+							padding-bottom: 10px
+						.emailWhite-schedule__col1
+							width: 34.2%
+						.emailWhite-schedule__col2
+							width: 41.8%
+						.emailWhite-schedule__col3
+							width: 24%
+				p.emailWhite-schedule__text
+					max-width: 90%
+					margin-bottom: 0
+					margin-top: 35px
+					font-family: 'Verdana', sans-serif
+					font-weight: normal
+					font-size: 15px
+					color: #333333
+					a.emailWhite-schedule__link
+						border-bottom: 1px solid #ff2e2f
+		.emailWhite-profile
+			.emailWhite-profile__container
+				.emailWhite-profile__text
+					font-family: 'Verdana', sans-serif
+					font-size: 15px
+					font-weight: normal
+					color: #333333
+					span.emailWhite-profile__span_bold
+						font-family: 'Verdana'
+						font-weight: bold
+						font-size: 15px
+						color: #333333
+					a.emailWhite-profile__link
+						border-bottom: 1px solid #ff2e2f
+		.emailWhite-contacts
+			.emailWhite-contacts__container
+				.emailWhite-contacts__text
+					font-family: 'Verdana', sans-serif
+					font-size: 15px
+					font-weight: normal
+					color: #333333
+					span.emailWhite-contacts__span_bold
+						font-family: 'Verdana'
+						font-weight: bold
+						font-size: 15px
+						color: #333333
+					a.emailWhite-contacts__link_underlined
+						border-bottom: 1px solid #ff2e2f
+				p.emailWhite-contacts__dopText
+					margin: 0
+					font-family: 'Verdana'
+					font-weight: normal
+					font-size: 19px
+					color: #333333
+					span.emailWhite-contacts__dopText_bold
+						font-weight: bold
+		.emailWhite-map
+			background-image: url('../img/emailWhite/emailWhite-map__imgBg.jpg')
+			background-repeat: no-repeat
+			background-size: cover
+			.emailWhite-map__container
+				.emailWhite-map__text
+					font-family: 'Verdana'
+					font-weight: normal
+					font-size: 17px
+					color: #333333
+					letter-spacing: -1px
+				.emailWhite-map__text_bold
+					font-family: 'Verdana'
+					font-weight: bold
+					font-size: 20px
+					color: #333333
+					letter-spacing: -2px
+				td
+					padding-bottom: 30px
+					vertical-align: top
+					img 
+						margin-top: 2px
+				.emailWhite-map__col1	
+					width: 50px
 		.emailWhite-footer
-			background-color: #212121
+			background-color: #212121 !important
 			padding-top: 47.5px
 			padding-bottom: 47.5px
 			.emailWhite-footer__container
@@ -221,25 +323,28 @@ body
 							font-family: 'Verdana', sans-serif
 							font-size: 15px
 							font-weight: normal
-							color: #ffffff
+							color: #ffffff !important
 							opacity: 0.75
-				.emailWhite-footer__textOuter, .emailWhite-footer__socials
-					display: inline-block
 				.emailWhite-footer__socials
-					margin-top: 15px
-					a.emailWhite-footer__social
+					padding-top: 15px
+					.emailWhite-footer__social
 						border: 1px solid rgba(255, 255, 255, 0.302)
 						transition: 0.5s
+						display: inline-block
+						text-align: center
+						margin-left: 10px
+						width: 53px
+						height: 53px
+						line-height: 50px
+						border-radius: 50%
+						img.emailWhite__imgSocial
+							display: inline-block
+							vertical-align: middle
 						img.emailWhite-footer__imgSocial
 							transition: 0.5s
-					a.emailWhite-footer__social:hover
+					.emailWhite-footer__social:hover
 						border: 1px solid #ff2e2e
 						background-color: #ff2e2e
 						img.emailWhite-footer__imgSocial
 							filter: brightness(10)
 							-webkit-filter: brightness(10)
-							-ms-filter: 'progid:DXImageTransform.Microsoft.brightness(10)'
-							filter: unquote("progid:DXImageTransform.Microsoft.brightness(10)")
-
-
-					

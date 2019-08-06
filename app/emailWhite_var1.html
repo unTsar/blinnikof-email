@@ -11,439 +11,809 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/emailWhite_var1.css">
   </head>
-  <style>
-  	body {
-	  margin: 0;
-	  padding: 0;
-	}
+  <style>@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
 
-	body a.emailWhite__link {
-	  text-decoration: none;
-	  outline: none;
-	  color: #ff2e2f;
-	}
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+}
 
-	body .emailWhite-wrapper {
-	  background-color: #F8F8F8;
-	  max-width: 1000px;
-	  margin-top: 0;
-	  margin-bottom: 0;
-	  padding: 0;
-	  margin-left: auto;
-	  margin-right: auto;
-	}
+@font-face {
+  font-family: "MullerRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerRegular/MullerRegular.eot");
+  src: url("../fonts/MullerRegular/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerRegular/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular/MullerRegular.ttf") format("truetype");
+}
 
-	body .emailWhite-wrapper .emailWhite__headOuter {
-	  white-space: nowrap;
-	  overflow: hidden;
-	}
+@font-face {
+  font-family: "MullerLight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerLight/MullerLight.eot");
+  src: url("../fonts/MullerLight/MullerLight.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerLight/MullerLight.woff") format("woff"), url("../fonts/MullerLight/MullerLight.ttf") format("truetype");
+}
 
-	body .emailWhite-wrapper .emailWhite__headOuter h1.emailWhite__h1 {
-	  margin: 0;
-	  font-family: 'Verdana', sans-serif;
-	  font-size: 27px;
-	  font-weight: bold;
-	  color: #333333;
-	  letter-spacing: -1px;
-	}
+@font-face {
+  font-family: "MullerMedium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerMedium/MullerMedium.eot");
+  src: url("../fonts/MullerMedium/MullerMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerMedium/MullerMedium.woff") format("woff"), url("../fonts/MullerMedium/MullerMedium.ttf") format("truetype");
+}
 
-	body .emailWhite-wrapper .emailWhite__headOuter .emailWhite__line {
-	  background-color: #000000;
-	  opacity: 0.4;
-	  width: 100%;
-	  height: 1px;
-	  margin-top: 7.5px;
-	  margin-left: 10px;
-	}
+@font-face {
+  font-family: "MullerBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerBold/MullerBold.eot");
+  src: url("../fonts/MullerBold/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBold/MullerBold.woff") format("woff"), url("../fonts/MullerBold/MullerBold.ttf") format("truetype");
+}
 
-	body .emailWhite-wrapper .emailWhite__headOuter h1.emailWhite__h1, body .emailWhite-wrapper .emailWhite__headOuter .emailWhite__line {
-	  display: inline-block;
-	  vertical-align: middle;
-	}
+@font-face {
+  font-family: "MullerBlack";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerBlack/MullerBlack.eot");
+  src: url("../fonts/MullerBlack/MullerBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBlack/MullerBlack.woff") format("woff"), url("../fonts/MullerBlack/MullerBlack.ttf") format("truetype");
+}
 
-	body .emailWhite-wrapper .emailWhite__socials {
-	  float: right;
-	}
+@font-face {
+  font-family: "MullerExtraBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot");
+  src: url("../fonts/MullerExtraBold/MullerExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerExtraBold/MullerExtraBold.woff") format("woff"), url("../fonts/MullerExtraBold/MullerExtraBold.ttf") format("truetype");
+}
 
-	body .emailWhite-wrapper .emailWhite__socials a.emailWhite__social {
-	  display: inline-block;
-	  text-align: center;
-	  margin-left: 10px;
-	  width: 53px;
-	  height: 53px;
-	  line-height: 50px;
-	  border: 1px solid rgba(255, 255, 255, 0.502);
-	  -webkit-border-radius: 50%;
-	          border-radius: 50%;
-	}
+body {
+  margin: 0;
+  padding: 0;
+}
 
-	body .emailWhite-wrapper .emailWhite__socials a.emailWhite__social img.emailWhite__imgSocial {
-	  display: inline-block;
-	  vertical-align: middle;
-	}
+body a.emailWhite__link {
+  text-decoration: none;
+  outline: none;
+  color: #ff2e2f;
+}
 
-	body .emailWhite-wrapper .emailWhite__container {
-	  max-width: 600px;
-	  margin-left: auto;
-	  margin-right: auto;
-	}
+body .emailWhite-wrapper {
+  background-color: #F8F8F8 !important;
+  max-width: 1000px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 0;
+}
 
-	body .emailWhite-wrapper .emailWhite-header {
-	  position: relative;
-	  padding-bottom: 177px;
-	}
+body .emailWhite-wrapper table {
+  border-spacing: 0;
+}
 
-	body .emailWhite-wrapper .emailWhite-header img.emailWhite-header__header-bg {
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  width: 100%;
-	}
+body .emailWhite-wrapper table td, body .emailWhite-wrapper table th, body .emailWhite-wrapper table tr {
+  padding: 0;
+  margin: 0;
+}
 
-	body .emailWhite-wrapper .emailWhite-header .emailWhite-headerTop {
-	  position: relative;
-	  padding-top: 35px;
-	}
+body .emailWhite-wrapper .emailWhite__headOuter {
+  white-space: nowrap;
+  overflow: hidden;
+}
 
-	body .emailWhite-wrapper .emailWhite-header .emailWhite-headerTop .emailWhite-headerTop__container img.emailWhite-headerTop__logo {
-	  margin-top: 5px;
-	}
+body .emailWhite-wrapper .emailWhite__headOuter h1.emailWhite__h1 {
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+  color: #333333;
+  letter-spacing: -1px;
+}
 
-	body .emailWhite-wrapper .emailWhite-genInf {
-	  padding-top: 30px;
-	}
+body .emailWhite-wrapper .emailWhite__headOuter .emailWhite__line {
+  background-color: #000000;
+  opacity: 0.4;
+  width: 100%;
+  height: 1px;
+  margin-top: 7.5px;
+  margin-left: 10px;
+}
 
-	body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__headOuter {
-	  white-space: nowrap;
-	  overflow: hidden;
-	}
+body .emailWhite-wrapper .emailWhite__headOuter h1.emailWhite__h1, body .emailWhite-wrapper .emailWhite__headOuter .emailWhite__line {
+  display: inline-block;
+  vertical-align: middle;
+}
 
-	body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__headOuter h1.emailWhite-genInf__h1 {
-	  margin: 0;
-	  font-family: 'Verdana', sans-serif;
-	  font-weight: bold;
-	  font-size: 39px;
-	  color: #ff2e2f;
-	  letter-spacing: -2px;
-	}
+body .emailWhite-wrapper .emailWhite__socials a.emailWhite__social {
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+  width: 53px;
+  height: 53px;
+  line-height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.502);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
 
-	body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__headOuter .emailWhite-genInf__line {
-	  background-color: #000000;
-	  opacity: 0.4;
-	  width: 100%;
-	  height: 1px;
-	  margin-top: 7.5px;
-	  margin-left: 10px;
-	}
+body .emailWhite-wrapper .emailWhite__socials a.emailWhite__social img.emailWhite__imgSocial {
+  display: inline-block;
+  vertical-align: middle;
+}
 
-	body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__headOuter h1.emailWhite-genInf__h1, body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__headOuter .emailWhite-genInf__line {
-	  display: inline-block;
-	  vertical-align: middle;
-	}
+body .emailWhite-wrapper .emailWhite__container {
+  max-width: 600px !important;
+  width: 100%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 
-	body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__subhead {
-	  padding-top: 20px;
-	}
+body .emailWhite-wrapper .emailWhite-header {
+  padding-bottom: 177px;
+  background-image: url("../img/emailWhite/emailWhite__header-bg.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+}
 
-	body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__subhead span.emailWhite-genInf__span {
-	  font-family: 'Verdana', sans-serif;
-	  font-weight: normal;
-	  font-size: 20px;
-	  color: #333333;
-	  letter-spacing: -0.5px;
-	}
+body .emailWhite-wrapper .emailWhite-header .emailWhite-headerTop {
+  padding-top: 35px;
+}
 
-	body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__desc {
-	  padding-top: 30px;
-	  white-space: nowrap;
-	  width: 100%;
-	}
+body .emailWhite-wrapper .emailWhite-header .emailWhite-headerTop .emailWhite-headerTop__container img.emailWhite-headerTop__logo {
+  margin-top: 5px;
+}
 
-	body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__desc .emailWhite-genInf__line {
-	  width: 66px;
-	  height: 4px;
-	  background-color: #ff2e2f;
-	}
+body .emailWhite-wrapper .emailWhite-header .emailWhite-headerTop .emailWhite-headerTop__container .emailWhite-headerTop__socials a.emailWhite-headerTop__social {
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+  width: 53px;
+  height: 53px;
+}
 
-	body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__desc p.emailWhite-genInf__text {
-	  margin: 0;
-	  font-family: 'Verdana', sans-serif;
-	  font-weight: normal;
-	  font-size: 19px;
-	  color: #333333;
-	  letter-spacing: -0.5px;
-	  margin-left: 20px;
-	  max-width: 85%;
-	  white-space: normal;
-	}
+body .emailWhite-wrapper .emailWhite-genInf {
+  padding-top: 30px;
+}
 
-	body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__desc .emailWhite-genInf__line, body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__desc p.emailWhite-genInf__text {
-	  display: inline-block;
-	  vertical-align: middle;
-	}
+body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__headOuter {
+  white-space: nowrap;
+  overflow: hidden;
+}
 
-	body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container a.emailWhite-genInf__buttonPay {
-	  -webkit-transition: 0.3s;
-	  -o-transition: 0.3s;
-	  transition: 0.3s;
-	  margin-top: 40px;
-	  margin-left: auto;
-	  margin-right: auto;
-	  display: block;
-	  text-decoration: none;
-	  text-transform: uppercase;
-	  background-color: #ff2e2f;
-	  -webkit-border-radius: 37px;
-	          border-radius: 37px;
-	  width: 251px;
-	  height: 74px;
-	  line-height: 74px;
-	  text-align: center;
-	  font-family: 'Verdana', sans-serif;
-	  font-weight: bold;
-	  font-size: 14px;
-	  color: #ffffff;
-	}
+body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__headOuter h1.emailWhite-genInf__h1 {
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+  font-weight: bold;
+  font-size: 39px;
+  color: #ff2e2f;
+  letter-spacing: -2px;
+}
 
-	body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container a.emailWhite-genInf__buttonPay:hover {
-	  -webkit-box-shadow: 0px 0px 20px #ff2e2f;
-	          box-shadow: 0px 0px 20px #ff2e2f;
-	}
+body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__headOuter .emailWhite-genInf__line {
+  background-color: #000000;
+  opacity: 0.4;
+  width: 100%;
+  height: 1px;
+  margin-top: 7.5px;
+  margin-left: 10px;
+}
 
-	body .emailWhite-wrapper .emailWhite-order, body .emailWhite-wrapper .emailWhite-schedule, body .emailWhite-wrapper .emailWhite-profile, body .emailWhite-wrapper .emailWhite-contacts {
-	  padding-top: 50px;
-	}
+body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__subhead {
+  padding-top: 20px;
+}
 
-	body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container .emailWhite-order__headOuter .emailWhite-order__line {
-	  margin-left: 17.5px;
-	}
+body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__subhead span.emailWhite-genInf__span {
+  font-family: 'Verdana', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: #333333;
+  letter-spacing: -0.5px;
+}
 
-	body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table {
-	  padding-top: 17.5px;
-	  padding-left: 10px;
-	  padding-right: 5px;
-	  width: 100%;
-	  border-collapse: collapse;
-	}
+body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__desc .emailWhite-genInf__line {
+  width: 66px;
+  height: 4px;
+  background-color: #ff2e2f;
+}
 
-	body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table tr {
-	  border-bottom: 1px solid #686868;
-	}
+body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__desc p.emailWhite-genInf__text {
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  color: #333333;
+  letter-spacing: -0.5px;
+  margin-left: 20px;
+  max-width: 90%;
+  white-space: normal;
+}
 
-	body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table tr .emailWhite-order__tableCell {
-	  padding-top: 17.5px;
-	  padding-bottom: 17.5px;
-	}
+body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__desc .emailWhite-genInf__line, body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container .emailWhite-genInf__desc p.emailWhite-genInf__text {
+  margin-top: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
 
-	body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table tr .emailWhite-order__col1 {
-	  width: 50.6%;
-	}
+body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container a.emailWhite-genInf__buttonPay {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ff2e2f;
+  -webkit-border-radius: 37px;
+          border-radius: 37px;
+  width: 251px;
+  height: 74px;
+  line-height: 74px;
+  text-align: center;
+  font-family: 'Verdana', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+}
 
-	body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table tr .emailWhite-order__col2 {
-	  width: 23.7%;
-	}
+body .emailWhite-wrapper .emailWhite-genInf .emailWhite-genInf__container a.emailWhite-genInf__buttonPay:hover {
+  -webkit-box-shadow: 0px 0px 20px #ff2e2f;
+          box-shadow: 0px 0px 20px #ff2e2f;
+}
 
-	body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table tr .emailWhite-order__col3 {
-	  width: 25.7%;
-	}
+body .emailWhite-wrapper .emailWhite-order, body .emailWhite-wrapper .emailWhite-schedule, body .emailWhite-wrapper .emailWhite-profile, body .emailWhite-wrapper .emailWhite-contacts {
+  padding-top: 50px;
+}
 
-	body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table tr th {
-	  white-space: nowrap;
-	  text-align: left;
-	  text-transform: uppercase;
-	  font-family: 'Verdana', sans-serif;
-	  font-size: 15px;
-	  font-weight: bold;
-	  color: #ff2e2f;
-	}
+body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container .emailWhite-order__headOuter .emailWhite-order__line {
+  margin-left: 17.5px;
+}
 
-	body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table tr td {
-	  font-family: 'Verana', sans-serif;
-	  font-size: 15px;
-	  font-weight: normal;
-	  color: #333333;
-	}
+body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table {
+  margin-top: 17.5px;
+  width: 100%;
+  border-collapse: collapse;
+}
 
-	body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container .emailWhite-order__result {
-	  text-align: right;
-	  margin-top: 25px;
-	}
+body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table tr {
+  border-bottom: 1px solid #686868;
+}
 
-	body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container .emailWhite-order__result .emailWhite-order__line_red {
-	  width: 35px;
-	  height: 3px;
-	  margin-top: 3px;
-	  background-color: #ff2e2f;
-	}
+body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table tr .emailWhite-order__tableCell {
+  padding-top: 17.5px;
+  padding-bottom: 17.5px;
+}
 
-	body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container .emailWhite-order__result span.emailWhite-order__span {
-	  font-family: 'Verdana', sans-serif;
-	  font-weight: normal;
-	  font-size: 15px;
-	  color: #333333;
-	  margin-left: 17.5px;
-	}
+body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table tr .emailWhite-order__col1 {
+  width: 50.6%;
+  padding-left: 10px;
+}
 
-	body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container .emailWhite-order__result span.emailWhite-order__span span.emailWhite-order__span_bold {
-	  font-weight: bold;
-	  margin-right: 7.5px;
-	}
+body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table tr .emailWhite-order__col2 {
+  width: 23.7%;
+}
 
-	body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container .emailWhite-order__result .emailWhite-order__line_red, body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container .emailWhite-order__result span.emailWhite-order__span {
-	  display: inline-block;
-	  vertical-align: middle;
-	}
+body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table tr .emailWhite-order__col3 {
+  width: 25.7%;
+  padding-right: 5px;
+}
 
-	body .emailWhite-wrapper .emailWhite-footer {
-	  background-color: #212121;
-	  padding-top: 47.5px;
-	  padding-bottom: 47.5px;
-	}
+body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table tr th {
+  white-space: nowrap;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'Verdana', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ff2e2f;
+}
 
-	body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__textOuter p.emailWhite-footer__text {
-	  margin: 0;
-	  font-family: 'Verdana', sans-serif;
-	  font-size: 15px;
-	  font-weight: normal;
-	  color: #ffffff;
-	  opacity: 0.75;
-	  line-height: 1.2;
-	}
+body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container table.emailWhite-order__table tr td {
+  font-family: 'Verana', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #333333;
+}
 
-	body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__textOuter p.emailWhite-footer__text a.emailWhite-footer__link {
-	  text-decoration: none;
-	  border-bottom: 1px solid;
-	  color: #ffffff;
-	}
+body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container .emailWhite-order__result {
+  text-align: right;
+  padding-top: 25px;
+}
 
-	body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__textOuter .emailWhite-footer__copyText {
-	  padding-top: 15px;
-	}
+body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container .emailWhite-order__result .emailWhite-order__line_red {
+  width: 35px;
+  height: 3px;
+  margin-top: 3px;
+  background-color: #ff2e2f;
+}
 
-	body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__textOuter .emailWhite-footer__copyText span.emailWhite-footer__span {
-	  font-family: 'Verdana', sans-serif;
-	  font-size: 15px;
-	  font-weight: normal;
-	  color: #ffffff;
-	  opacity: 0.75;
-	}
+body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container .emailWhite-order__result span.emailWhite-order__span {
+  font-family: 'Verdana', sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  color: #333333;
+  margin-left: 17.5px;
+}
 
-	body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__textOuter, body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__socials {
-	  display: inline-block;
-	}
+body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container .emailWhite-order__result span.emailWhite-order__span span.emailWhite-order__span_bold {
+  font-weight: bold;
+  margin-right: 7.5px;
+}
 
-	body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__socials {
-	  margin-top: 15px;
-	}
+body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container .emailWhite-order__result .emailWhite-order__line_red, body .emailWhite-wrapper .emailWhite-order .emailWhite-order__container .emailWhite-order__result span.emailWhite-order__span {
+  display: inline-block;
+  vertical-align: middle;
+}
 
-	body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__socials a.emailWhite-footer__social {
-	  border: 1px solid rgba(255, 255, 255, 0.302);
-	  -webkit-transition: 0.5s;
-	  -o-transition: 0.5s;
-	  transition: 0.5s;
-	}
+body .emailWhite-wrapper .emailWhite-schedule .emailWhite-schedule__container table.emailWhite-schedule__table {
+  margin-top: 25px;
+  width: 100% !important;
+}
 
-	body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__socials a.emailWhite-footer__social img.emailWhite-footer__imgSocial {
-	  -webkit-transition: 0.5s;
-	  -o-transition: 0.5s;
-	  transition: 0.5s;
-	}
+body .emailWhite-wrapper .emailWhite-schedule .emailWhite-schedule__container table.emailWhite-schedule__table tr th {
+  text-align: left !important;
+  font-family: 'Verdana', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #333333;
+}
 
-	body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__socials a.emailWhite-footer__social:hover {
-	  border: 1px solid #ff2e2e;
-	  background-color: #ff2e2e;
-	}
+body .emailWhite-wrapper .emailWhite-schedule .emailWhite-schedule__container table.emailWhite-schedule__table tr td {
+  font-family: 'Verdana', sans-serif;
+  font-weight: normal;
+  color: #333333;
+  font-size: 15px;
+}
 
-	body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__socials a.emailWhite-footer__social:hover img.emailWhite-footer__imgSocial {
-	  filter: brightness(10);
-	  -webkit-filter: brightness(10);
-	  -ms-filter: 'progid:DXImageTransform.Microsoft.brightness(10)';
-	  filter: progid:DXImageTransform.Microsoft.brightness(10);
-	}
+body .emailWhite-wrapper .emailWhite-schedule .emailWhite-schedule__container table.emailWhite-schedule__table tr th, body .emailWhite-wrapper .emailWhite-schedule .emailWhite-schedule__container table.emailWhite-schedule__table tr td {
+  letter-spacing: -1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body .emailWhite-wrapper .emailWhite-schedule .emailWhite-schedule__container table.emailWhite-schedule__table tr .emailWhite-schedule__col1 {
+  width: 34.2%;
+}
+
+body .emailWhite-wrapper .emailWhite-schedule .emailWhite-schedule__container table.emailWhite-schedule__table tr .emailWhite-schedule__col2 {
+  width: 41.8%;
+}
+
+body .emailWhite-wrapper .emailWhite-schedule .emailWhite-schedule__container table.emailWhite-schedule__table tr .emailWhite-schedule__col3 {
+  width: 24%;
+}
+
+body .emailWhite-wrapper .emailWhite-schedule .emailWhite-schedule__container p.emailWhite-schedule__text {
+  max-width: 90%;
+  margin-bottom: 0;
+  margin-top: 35px;
+  font-family: 'Verdana', sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  color: #333333;
+}
+
+body .emailWhite-wrapper .emailWhite-schedule .emailWhite-schedule__container p.emailWhite-schedule__text a.emailWhite-schedule__link {
+  border-bottom: 1px solid #ff2e2f;
+}
+
+body .emailWhite-wrapper .emailWhite-profile .emailWhite-profile__container .emailWhite-profile__text {
+  font-family: 'Verdana', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #333333;
+}
+
+body .emailWhite-wrapper .emailWhite-profile .emailWhite-profile__container .emailWhite-profile__text span.emailWhite-profile__span_bold {
+  font-family: 'Verdana';
+  font-weight: bold;
+  font-size: 15px;
+  color: #333333;
+}
+
+body .emailWhite-wrapper .emailWhite-profile .emailWhite-profile__container .emailWhite-profile__text a.emailWhite-profile__link {
+  border-bottom: 1px solid #ff2e2f;
+}
+
+body .emailWhite-wrapper .emailWhite-contacts .emailWhite-contacts__container .emailWhite-contacts__text {
+  font-family: 'Verdana', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #333333;
+}
+
+body .emailWhite-wrapper .emailWhite-contacts .emailWhite-contacts__container .emailWhite-contacts__text span.emailWhite-contacts__span_bold {
+  font-family: 'Verdana';
+  font-weight: bold;
+  font-size: 15px;
+  color: #333333;
+}
+
+body .emailWhite-wrapper .emailWhite-contacts .emailWhite-contacts__container .emailWhite-contacts__text a.emailWhite-contacts__link_underlined {
+  border-bottom: 1px solid #ff2e2f;
+}
+
+body .emailWhite-wrapper .emailWhite-contacts .emailWhite-contacts__container p.emailWhite-contacts__dopText {
+  margin: 0;
+  font-family: 'Verdana';
+  font-weight: normal;
+  font-size: 19px;
+  color: #333333;
+}
+
+body .emailWhite-wrapper .emailWhite-contacts .emailWhite-contacts__container p.emailWhite-contacts__dopText span.emailWhite-contacts__dopText_bold {
+  font-weight: bold;
+}
+
+body .emailWhite-wrapper .emailWhite-map {
+  background-image: url("../img/emailWhite/emailWhite-map__imgBg.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+body .emailWhite-wrapper .emailWhite-map .emailWhite-map__container .emailWhite-map__text {
+  font-family: 'Verdana';
+  font-weight: normal;
+  font-size: 17px;
+  color: #333333;
+  letter-spacing: -1px;
+}
+
+body .emailWhite-wrapper .emailWhite-map .emailWhite-map__container .emailWhite-map__text_bold {
+  font-family: 'Verdana';
+  font-weight: bold;
+  font-size: 20px;
+  color: #333333;
+  letter-spacing: -2px;
+}
+
+body .emailWhite-wrapper .emailWhite-map .emailWhite-map__container td {
+  padding-bottom: 30px;
+  vertical-align: top;
+}
+
+body .emailWhite-wrapper .emailWhite-map .emailWhite-map__container td img {
+  margin-top: 2px;
+}
+
+body .emailWhite-wrapper .emailWhite-map .emailWhite-map__container .emailWhite-map__col1 {
+  width: 50px;
+}
+
+body .emailWhite-wrapper .emailWhite-footer {
+  background-color: #212121 !important;
+  padding-top: 47.5px;
+  padding-bottom: 47.5px;
+}
+
+body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__textOuter p.emailWhite-footer__text {
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #ffffff;
+  opacity: 0.75;
+  line-height: 1.2;
+}
+
+body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__textOuter p.emailWhite-footer__text a.emailWhite-footer__link {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: #ffffff;
+}
+
+body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__textOuter .emailWhite-footer__copyText {
+  padding-top: 15px;
+}
+
+body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__textOuter .emailWhite-footer__copyText span.emailWhite-footer__span {
+  font-family: 'Verdana', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #ffffff !important;
+  opacity: 0.75;
+}
+
+body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__socials {
+  padding-top: 15px;
+}
+
+body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__socials .emailWhite-footer__social {
+  border: 1px solid rgba(255, 255, 255, 0.302);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+  width: 53px;
+  height: 53px;
+  line-height: 50px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__socials .emailWhite-footer__social img.emailWhite__imgSocial {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__socials .emailWhite-footer__social img.emailWhite-footer__imgSocial {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__socials .emailWhite-footer__social:hover {
+  border: 1px solid #ff2e2e;
+  background-color: #ff2e2e;
+}
+
+body .emailWhite-wrapper .emailWhite-footer .emailWhite-footer__container .emailWhite-footer__socials .emailWhite-footer__social:hover img.emailWhite-footer__imgSocial {
+  filter: brightness(10);
+  -webkit-filter: brightness(10);
+}
 </style>
   <body>
-    <div class="emailWhite-wrapper">
-      <div class="emailWhite-header"><img class="emailWhite-header__header-bg" src="img/emailWhite/emailWhite__header-bg.png" alt="email-white__header-bg.png">
-        <div class="emailWhite-headerTop">
-          <div class="emailWhite__container emailWhite-headerTop__container"><img class="emailWhite-headerTop__logo" src="img/emailWhite/emailWhite-logo.png" alt="emailWhite-logo.png">
-            <div class="emailWhite__socials emailWhite-headerTop__socials"><a class="emailWhite__social emailWhite-headerTop__social" href="#"><img class="emailWhite__imgSocial emailWhite-headerTop__imgSocial" src="img/emailWhite/emailWhite-headerTop__imgSocial1.png" alt="emailWhite-headerTop__imgSocial1.png"></a><a class="emailWhite__social emailWhite-headerTop__social" href="#"><img class="emailWhite__imgSocial emailWhite-headerTop__imgSocial" src="img/emailWhite/emailWhite-headerTop__imgSocial2.png" alt="emailWhite-headerTop__imgSocial2.png"></a><a class="emailWhite__social emailWhite-headerTop__social" href="#"><img class="emailWhite__imgSocial emailWhite-headerTop__imgSocial" src="img/emailWhite/emailWhite-headerTop__imgSocial3.png" alt="emailWhite-headerTop__imgSocial3.png"></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="emailWhite-genInf">
-        <div class="emailWhite__container emailWhite-genInf__container">
-          <div class="emailWhite-genInf__headOuter">
-            <h1 class="emailWhite-genInf__h1">Заказ #20903</h1>
-            <div class="emailWhite-genInf__line"></div>
-          </div>
-          <div class="emailWhite-genInf__subhead"><span class="emailWhite-genInf__span">Спасибо за Ваш заказ, Admin System </span></div>
-          <div class="emailWhite-genInf__desc">
-            <div class="emailWhite-genInf__line"></div>
-            <p class="emailWhite-genInf__text">Обращаем ваше внимание, что подача заявки не бронирует место в группе. Запись в группу происходит <a class="emailWhite__link emailWhite-genInf-link" href="#">только после оплаты</a><br>Пожалуйста, если у вас есть вопросы, свяжитесь с нами. Когда вы будете готовы, можете оплатить заказ в личном кабинете или по ссылке:</p>
-          </div><a class="emailWhite-genInf__buttonPay" href="#">ПЕРЕЙТИ К ОПЛАТЕ</a>
-        </div>
-      </div>
-      <div class="emailWhite-order">
-        <div class="emailWhite__container emailWhite-order__container">
-          <div class="emailWhite__headOuter emailWhite-order__headOuter"> 
-            <h1 class="emailWhite__h1 emailWhite-order__h1">Заказ</h1>
-            <div class="emailWhite__line emailWhite-order__line"></div>
-          </div>
-          <table class="emailWhite-order__table">
+    <table class="emailWhite-wrapper">
+      <tr>
+        <td>
+          <table class="emailWhite-header" style="width: 100%">
             <tr>
-              <th class="emailWhite-order__tableCell emailWhite-order__col1">Название урока</th>
-              <th class="emailWhite-order__tableCell emailWhite-order__col2">Группа</th>
-              <th class="emailWhite-order__tableCell emailWhite-order__col3">Стоимость, руб.</th>
-            </tr>
-            <tr>
-              <td class="emailWhite-order__tableCell emailWhite-order__col1">Абонемент 4</td>
-              <td class="emailWhite-order__tableCell emailWhite-order__col2">Группа 1</td>
-              <td class="emailWhite-order__tableCell emailWhite-order__col3">3 000,00 руб.</td>
-            </tr>
-            <tr>
-              <td class="emailWhite-order__tableCell emailWhite-order__col1">Абонемент 5</td>
-              <td class="emailWhite-order__tableCell emailWhite-order__col2">Группа 1</td>
-              <td class="emailWhite-order__tableCell emailWhite-order__col3">4 000,00 руб.</td>
+              <td class="emailWhite-headerTop">
+                <table class="emailWhite__container emailWhite-headerTop__container" align="center">
+                  <td><img class="emailWhite-headerTop__logo" src="img/emailWhite/emailWhite-logo.png" alt="emailWhite-logo.png"></td>
+                  <td class="emailWhite__socials emailWhite-headerTop__socials" align="right"><a class="emailWhite-headerTop__social" href="#"><img class="emailWhite__imgSocial emailWhite-headerTop__imgSocial" src="img/emailWhite/emailWhite-headerTop__imgSocial_circle1.png" alt="emailWhite-headerTop__imgSocial_circle1.png"></a><a class="emailWhite-headerTop__social" href="#"><img class="emailWhite__imgSocial emailWhite-headerTop__imgSocial" src="img/emailWhite/emailWhite-headerTop__imgSocial_circle2.png" alt="emailWhite-headerTop__imgSocial_circle2.png"></a><a class="emailWhite-headerTop__social" href="#"><img class="emailWhite__imgSocial emailWhite-headerTop__imgSocial" src="img/emailWhite/emailWhite-headerTop__imgSocial_circle3.png" alt="emailWhite-headerTop__imgSocial_circle3.png"></a></td>
+                </table>
+              </td>
             </tr>
           </table>
-          <div class="emailWhite-order__result">
-            <div class="emailWhite-order__line_red"></div><span class="emailWhite-order__span"><span class="emailWhite-order__span_bold">Итого:</span> 7 000,00 руб.</span>
-          </div>
-        </div>
-      </div>
-      <div class="emailWhite-schedule">
-        <div class="emailWhite__container emailWhite-schedule__container">
-          <div class="emailWhite__headOuter emailWhite-schedule__headOuter"> 
-            <h1 class="emailWhite__h1 emailWhite-schedule__h1">Расписание занятий</h1>
-            <div class="emailWhite__line emailWhite-schedule__line"></div>
-          </div>
-        </div>
-      </div>
-      <div class="emailWhite-profile">
-        <div class="emailWhite__container emailWhite-profile__container">
-          <div class="emailWhite__headOuter emailWhite-profile__headOuter"> 
-            <h1 class="emailWhite__h1 emailWhite-profile__h1">Личный кабинет</h1>
-            <div class="emailWhite__line emailWhite-profile__line"></div>
-          </div>
-        </div>
-      </div>
-      <div class="emailWhite-contacts">
-        <div class="emailWhite__container emailWhite-contacts__container">
-          <div class="emailWhite__headOuter emailWhite-contacts__headOuter"> 
-            <h1 class="emailWhite__h1 emailWhite-contacts__h1">Контактная информация</h1>
-            <div class="emailWhite__line emailWhite-contacts__line"></div>
-          </div>
-        </div>
-      </div>
-      <div class="emailWhite-footer">
-        <div class="emailWhite__container emailWhite-footer__container">
-          <div class="emailWhite-footer__textOuter">
-            <p class="emailWhite-footer__text">Вы получили это письмо, потому что <br>Ваш email был указан <br>на сайте <a class="emailWhite-footer__link" href="#">www.v-concept.ru</a></p>
-            <div class="emailWhite-footer__copyText"><span class="emailWhite-footer__span">&copy; 2018 www.v-concept.ru</span></div>
-          </div>
-          <div class="emailWhite__socials emailWhite-footer__socials"><a class="emailWhite__social emailWhite-footer__social" href="#"><img class="emailWhite__imgSocial emailWhite-footer__imgSocial" src="img/emailWhite/emailWhite-headerTop__imgSocial1_red.png" alt="emailWhite-headerTop__imgSocial1_red.png"></a><a class="emailWhite__social emailWhite-footer__social" href="#"><img class="emailWhite__imgSocial emailWhite-footer__imgSocial" src="img/emailWhite/emailWhite-headerTop__imgSocial2_red.png" alt="emailWhite-headerTop__imgSocial2_red.png"></a><a class="emailWhite__social emailWhite-footer__social" href="#"><img class="emailWhite__imgSocial emailWhite-footer__imgSocial" src="img/emailWhite/emailWhite-headerTop__imgSocial3_red.png" alt="emailWhite-headerTop__imgSocial3_red.png"></a></div>
-        </div>
-      </div>
-    </div>
+          <table class="emailWhite-genInf" style="width: 100%">
+            <tr>
+              <td>
+                <table class="emailWhite__container emailWhite-genInf__container" align="center">
+                  <tr>
+                    <td colspan="2">
+                      <div class="emailWhite-genInf__headOuter emailWhite__headOuter">
+                        <h1 class="emailWhite__h1 emailWhite-genInf__h1">Заказ #20903</h1>
+                        <div class="emailWhite__line emailWhite-genInf__line"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="emailWhite-genInf__subhead" colspan="2"><span class="emailWhite-genInf__span">Спасибо за Ваш заказ, Admin System </span></td>
+                  </tr>
+                  <tr class="emailWhite-genInf__desc">
+                    <td colspan="1">
+                      <div class="emailWhite-genInf__line"></div>
+                    </td>
+                    <td colspan="1">
+                      <p class="emailWhite-genInf__text">Обращаем ваше внимание, что подача заявки не бронирует место в группе. Запись в группу происходит <a class="emailWhite__link emailWhite-genInf-link" href="#">только после оплаты</a><br>Пожалуйста, если у вас есть вопросы, свяжитесь с нами. Когда вы будете готовы, можете оплатить заказ в личном кабинете или по ссылке:</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><a class="emailWhite-genInf__buttonPay" href="#">ПЕРЕЙТИ К ОПЛАТЕ</a></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table class="emailWhite-order" style="width: 100%">
+            <tr>
+              <td>
+                <table class="emailWhite__container emailWhite-order__container" align="center">
+                  <tr>
+                    <td>
+                      <div class="emailWhite__headOuter emailWhite-order__headOuter"> 
+                        <h1 class="emailWhite__h1 emailWhite-order__h1">Заказ</h1>
+                        <div class="emailWhite__line emailWhite-order__line"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table class="emailWhite-order__table">
+                        <tr>
+                          <th class="emailWhite-order__tableCell emailWhite-order__col1">Название урока</th>
+                          <th class="emailWhite-order__tableCell emailWhite-order__col2">Группа</th>
+                          <th class="emailWhite-order__tableCell emailWhite-order__col3">Стоимость, руб.</th>
+                        </tr>
+                        <tr>
+                          <td class="emailWhite-order__tableCell emailWhite-order__col1">Абонемент 4</td>
+                          <td class="emailWhite-order__tableCell emailWhite-order__col2">Группа 1</td>
+                          <td class="emailWhite-order__tableCell emailWhite-order__col3">3 000,00 руб.</td>
+                        </tr>
+                        <tr>
+                          <td class="emailWhite-order__tableCell emailWhite-order__col1">Абонемент 5</td>
+                          <td class="emailWhite-order__tableCell emailWhite-order__col2">Группа 1</td>
+                          <td class="emailWhite-order__tableCell emailWhite-order__col3">4 000,00 руб.</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="emailWhite-order__result">
+                      <div class="emailWhite-order__line_red"></div><span class="emailWhite-order__span"><span class="emailWhite-order__span_bold">Итого:</span> 7 000,00 руб.</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table class="emailWhite-schedule" style="width: 100%">
+            <tr>
+              <td>
+                <table class="emailWhite__container emailWhite-schedule__container" align="center">
+                  <tr>
+                    <td>
+                      <div class="emailWhite__headOuter emailWhite-schedule__headOuter"> 
+                        <h1 class="emailWhite__h1 emailWhite-schedule__h1">Расписание занятий</h1>
+                        <div class="emailWhite__line emailWhite-schedule__line"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table class="emailWhite-schedule__table">
+                        <tr>
+                          <th class="emailWhite-schedule__tableCell emailWhite-schedule__col1">Дата / Время</th>
+                          <th class="emailWhite-schedule__tableCell emailWhite-schedule__col2">Занятие</th>
+                          <th class="emailWhite-schedule__tableCell emailWhite-schedule__col3">Тренер</th>
+                        </tr>
+                        <tr>
+                          <td class="emailWhite-schedule__tableCell emailWhite-schedule__col1">30.11.2018,  19:00  ПТ </td>
+                          <td class="emailWhite-schedule__tableCell emailWhite-schedule__col2">«LadyFit 17»</td>
+                          <td class="emailWhite-schedule__tableCell emailWhite-schedule__col3">Рита Цыркуль</td>
+                        </tr>
+                        <tr>
+                          <td class="emailWhite-schedule__tableCell emailWhite-schedule__col1">01.12.2018,  10:00  СБ</td>
+                          <td class="emailWhite-schedule__tableCell emailWhite-schedule__col2">«Тайский Бокс 17»</td>
+                          <td class="emailWhite-schedule__tableCell emailWhite-schedule__col3">Руслан Бареев</td>
+                        </tr>
+                        <tr>
+                          <td class="emailWhite-schedule__tableCell emailWhite-schedule__col1">02.12.2018,  11:00  ВС </td>
+                          <td class="emailWhite-schedule__tableCell emailWhite-schedule__col2">«Ягодицы+Ноги+Пресс 17»</td>
+                          <td class="emailWhite-schedule__tableCell emailWhite-schedule__col3">Таня Крекшина</td>
+                        </tr>
+                        <tr>
+                          <td class="emailWhite-schedule__tableCell emailWhite-schedule__col1">04.12.2018,  19:00  ВТ</td>
+                          <td class="emailWhite-schedule__tableCell emailWhite-schedule__col2">«LadyFit 21»</td>
+                          <td class="emailWhite-schedule__tableCell emailWhite-schedule__col3">Рита Цыркуль</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="emailWhite-schedule__text">После оплаты Вы сможете перенести тренировку на другой день при наличии свободных мест в <a class="emailWhite__link emailWhite-schedule__link" href="">личном кабинете</a>, но не позднее, чем за один день до начала занятия.</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table class="emailWhite-profile" style="width: 100%">
+            <tr>
+              <td>
+                <table class="emailWhite__container emailWhite-profile__container" align="center">
+                  <tr>
+                    <td>
+                      <div class="emailWhite__headOuter emailWhite-profile__headOuter"> 
+                        <h1 class="emailWhite__h1 emailWhite-profile__h1">Личный кабинет</h1>
+                        <div class="emailWhite__line emailWhite-profile__line"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-top: 40px; line-height: 1.3">
+                      <div class="emailWhite-profile__text"><span class="emailWhite-profile__span_bold">Адрес:</span> <a class="emailWhite__link emailWhite-profile__link" href="">https://www.v-concept.ru/login</a></div>
+                      <div class="emailWhite-profile__text"><span class="emailWhite-profile__span_bold">Логин:</span> admin</div>
+                      <div class="emailWhite-profile__text"><span class="emailWhite-profile__span_bold">Пароль:</span> guest123</div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table class="emailWhite-contacts" style="width: 100%">
+            <tr>
+              <td>
+                <table class="emailWhite__container emailWhite-contacts__container" align="center">
+                  <tr>
+                    <td>
+                      <div class="emailWhite__headOuter emailWhite-contacts__headOuter"> 
+                        <h1 class="emailWhite__h1 emailWhite-contacts__h1">Контактная информация</h1>
+                        <div class="emailWhite__line emailWhite-contacts__line"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-top: 40px; line-height: 1.3">
+                      <div class="emailWhite-contacts__text"><span class="emailWhite-contacts__span_bold">Фамилия:</span> admin</div>
+                      <div class="emailWhite-contacts__text"><span class="emailWhite-contacts__span_bold">Имя:</span> system</div>
+                      <div class="emailWhite-contacts__text"><span class="emailWhite-contacts__span_bold">Email:</span> <a class="emailWhite__link emailWhite-contacts__link_underlined" href="mailto:blinnikoff@mail.ru">blinnikoff@mail.ru</a></div>
+                      <div class="emailWhite-contacts__text"><span class="emailWhite-contacts__span_bold">Телефон:</span> <a class="emailWhite__link emailWhite-contacts__link" href="tel:+7 (906) 099-80-80">+7 (906) 099-80-80</a></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-top: 40px;">
+                      <p class="emailWhite-contacts__dopText">Если у вас возникают вопросы, пожалуйста, напишите нам на почту или позвоните.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-top: 30px;">
+                      <p class="emailWhite-contacts__dopText">Мы всегда с Вами.<br>Ваша команда <span class="emailWhite-contacts__dopText_bold">V_CONCEPT</span><br><span class="emailWhite-contacts__dopText_bold">Время работы: каждый день с 12-20</span></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table class="emailWhite-map" style="width: 100%; margin-top: 15px; padding-top: 120px">
+            <tr>
+              <td>
+                <table class="emailWhite__container emailWhite-map__container" align="center">
+                  <tr>
+                    <td class="emailWhite-map__col1"><img src="img/emailWhite/emailWhite-map__icon1.png" alt="emailWhite-map__icon1.png" style="margin-top: 5px"></td>
+                    <td>
+                      <div class="emailWhite-map__text_bold">+7 (499)-125-32-25</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="emailWhite-map__col1"><img src="img/emailWhite/emailWhite-map__icon2.png" alt="emailWhite-map__icon2.png"></td>
+                    <td>
+                      <div class="emailWhite-map__text">Москва, Звенигородское<br>шоссе, 3</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="emailWhite-map__col1"><img src="img/emailWhite/emailWhite-map__icon3.png" alt="emailWhite-map__icon3.png"></td>
+                    <td>
+                      <div class="emailWhite-map__text">info@v-concept.ru</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="emailWhite-map__col1"><img src="img/emailWhite/emailWhite-map__icon4.png" alt="emailWhite-map__icon4.png"></td>
+                    <td>
+                      <div class="emailWhite-map__text">Время работы: 10:00-20:00<br>(в выходные 10:00-17:00)</div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table class="emailWhite-footer" style="width: 100%">
+            <tr>
+              <td>
+                <table class="emailWhite__container emailWhite-footer__container" align="center">
+                  <td class="emailWhite-footer__textOuter">
+                    <p class="emailWhite-footer__text">Вы получили это письмо, потому что <br>Ваш email был указан <br>на сайте <a class="emailWhite-footer__link" href="#">www.v-concept.ru</a></p>
+                    <div class="emailWhite-footer__copyText"><span class="emailWhite-footer__span">&copy; 2018 www.v-concept.ru</span></div>
+                  </td>
+                  <td class="emailWhite__socials emailWhite-footer__socials" align="right">
+                    <div class="emailWhite__social emailWhite-footer__social"><a href="#" style="width: 100%; height: 100%;"><img class="emailWhite__imgSocial emailWhite-footer__imgSocial" src="img/emailWhite/emailWhite-headerTop__imgSocial1_red.png" alt="emailWhite-headerTop__imgSocial1_red.png"></a></div>
+                    <div class="emailWhite__social emailWhite-footer__social"><a href="#" style="width: 100%; height: 100%;"><img class="emailWhite__imgSocial emailWhite-footer__imgSocial" src="img/emailWhite/emailWhite-headerTop__imgSocial2_red.png" alt="emailWhite-headerTop__imgSocial2_red.png"></a></div>
+                    <div class="emailWhite__social emailWhite-footer__social"><a href="#" style="width: 100%; height: 100%;"><img class="emailWhite__imgSocial emailWhite-footer__imgSocial" src="img/emailWhite/emailWhite-headerTop__imgSocial3_red.png" alt="emailWhite-headerTop__imgSocial3_red.png"></a></div>
+                  </td>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
