@@ -1,0 +1,239 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+
+		title Email-Black
+		meta(name="description" content="")
+		meta(name="keywords" content="")
+		meta(name="author" content="Front-end by unTsar")
+		meta(name="robots" content="index, follow")
+
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+
+
+		link(rel="stylesheet", href="css/emailBlack_var1.css")
+	body
+		table.emailBlack-wrapper
+			tr
+				td(style="padding: 0px")
+					table(style="width: 100%").emailBlack-header
+						tr
+							td.emailBlack-headerTop
+								table(align="center").emailBlack__container.emailBlack-headerTop__container
+									td
+										table.emailBlack-headerTop__logoOuter(style="width: 205px;" align="left")
+											td
+												img.emailBlack-headerTop__logo(src="img/emailWhite/emailWhite-logo.png", alt="emailWhite-logo.png")
+										table.emailBlack__socials.emailBlack-headerTop__socials(style="width: 190px;" align="right")
+											td
+												a.emailBlack-headerTop__social(href="#" target="_blank")
+													img.emailBlack__imgSocial.emailBlack-headerTop__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial_circle1.png", alt="emailWhite-headerTop__imgSocial_circle1.png")
+												a.emailBlack-headerTop__social(href="#" target="_blank")
+													img.emailBlack__imgSocial.emailBlack-headerTop__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial_circle2.png", alt="emailWhite-headerTop__imgSocial_circle2.png")
+												a.emailBlack-headerTop__social(href="#" target="_blank")
+													img.emailBlack__imgSocial.emailBlack-headerTop__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial_circle3.png", alt="emailWhite-headerTop__imgSocial_circle3.png")
+
+					table(style="width: 100%").emailBlack-genInf
+						tr
+							td
+								table(align="center").emailBlack__container.emailBlack-genInf__container
+									tr
+										td(colspan="2")
+											table(style="width: 100%;").emailBlack-genInf__headOuter.emailBlack__headOuter
+												td(style="width: 300px")
+													h1.emailBlack__h1.emailBlack-genInf__h1 Заказ #20903
+												td
+													.emailBlack__line.emailBlack-genInf__line
+									tr
+										td(colspan="2").emailBlack-genInf__subhead
+											span.emailBlack-genInf__span Спасибо за Ваш заказ, Admin System 
+									tr.emailBlack-genInf__desc
+										td(colspan="1" style="padding-right: 20px;")
+											.emailBlack-genInf__line
+										td(colspan="1" style="width: 516px;")
+											p.emailBlack-genInf__text|Обращаем ваше внимание, что подача заявки не бронирует место в группе. Запись в группу происходит #[a.emailBlack__link.emailBlack-genInf-link(href="#" target="_blank") только после оплаты]
+												br
+												|Пожалуйста, если у вас есть вопросы, свяжитесь с нами. Когда вы будете готовы, можете оплатить заказ в личном кабинете или по ссылке:
+									tr
+										td(colspan="2")
+											table.emailBlack-genInf__buttonPay(onmouseover="this.style.boxShadow='0px 0px 20px #ff2e2f'" onmouseout="this.style.boxShadow='none'")
+												td(align="center")
+													a(href="#" target="_blank") ПЕРЕЙТИ К ОПЛАТЕ
+					table(style="width: 100%").emailBlack-order
+						tr
+							td
+								table(align="center").emailBlack__container.emailBlack-order__container
+									tr
+										td
+											table(style="width: 100%;").emailBlack__headOuter.emailBlack-order__headOuter 
+												td(style="width: 90px")
+													h1.emailBlack__h1.emailBlack-order__h1 Заказ
+												td(style="padding-left: 10px;")
+													.emailBlack__line.emailBlack-order__line
+									tr
+										td
+											table.emailBlack-order__table
+												tr
+													th.emailBlack-order__tableCell.emailBlack-order__col1 Название урока
+													th.emailBlack-order__tableCell.emailBlack-order__col2 Группа
+													th.emailBlack-order__tableCell.emailBlack-order__col3 Стоимость, руб.
+												tr
+													td.emailBlack-order__tableCell.emailBlack-order__col1 Абонемент 4
+													td.emailBlack-order__tableCell.emailBlack-order__col2 Группа 1
+													td.emailBlack-order__tableCell.emailBlack-order__col3 3 000,00 руб.
+												tr
+													td.emailBlack-order__tableCell.emailBlack-order__col1 Абонемент 5
+													td.emailBlack-order__tableCell.emailBlack-order__col2 Группа 1
+													td.emailBlack-order__tableCell.emailBlack-order__col3 4 000,00 руб.
+									tr
+										td.emailBlack-order__result
+											.emailBlack-order__line_red
+											span.emailBlack-order__span #[span.emailBlack-order__span_bold Итого:] 7 000,00 руб.
+					table(style="width: 100%").emailBlack-schedule
+						tr
+							td
+								table(align="center").emailBlack__container.emailBlack-schedule__container
+									tr
+										td
+											table(style="width: 100%;").emailBlack__headOuter.emailBlack-schedule__headOuter 
+												td(style="width: 305px")
+													h1.emailBlack__h1.emailBlack-schedule__h1 Расписание занятий
+												td(style="padding-left: 10px;")
+													.emailBlack__line.emailBlack-schedule__line
+									tr
+										td
+											table.emailBlack-schedule__table(cellspacing="5")
+												tr
+													th.emailBlack-schedule__tableCell.emailBlack-schedule__col1 Дата / Время
+													th.emailBlack-schedule__tableCell.emailBlack-schedule__col2 Занятие
+													th.emailBlack-schedule__tableCell.emailBlack-schedule__col3 Тренер
+												tr
+													td.emailBlack-schedule__tableCell.emailBlack-schedule__col1 30.11.2018,  19:00  ПТ 
+													td.emailBlack-schedule__tableCell.emailBlack-schedule__col2 «LadyFit 17»
+													td.emailBlack-schedule__tableCell.emailBlack-schedule__col3 Рита Цыркуль
+												tr
+													td.emailBlack-schedule__tableCell.emailBlack-schedule__col1 01.12.2018,  10:00  СБ
+													td.emailBlack-schedule__tableCell.emailBlack-schedule__col2 «Тайский Бокс 17»
+													td.emailBlack-schedule__tableCell.emailBlack-schedule__col3 Руслан Бареев
+												tr
+													td.emailBlack-schedule__tableCell.emailBlack-schedule__col1 02.12.2018,  11:00  ВС 
+													td.emailBlack-schedule__tableCell.emailBlack-schedule__col2 «#[span.emailBlack-schedule__text(style="word-spacing: -5px;") Ягодицы+ Ноги+ Пресс] 17»
+													td.emailBlack-schedule__tableCell.emailBlack-schedule__col3 Таня Крекшина
+												tr
+													td.emailBlack-schedule__tableCell.emailBlack-schedule__col1 04.12.2018,  19:00  ВТ
+													td.emailBlack-schedule__tableCell.emailBlack-schedule__col2 «LadyFit 21»
+													td.emailBlack-schedule__tableCell.emailBlack-schedule__col3 Рита Цыркуль
+									tr
+										td
+											p.emailBlack-schedule__text После оплаты Вы сможете перенести тренировку на другой день при наличии свободных мест в #[a.emailBlack__link.emailBlack-schedule__link(href="#" target="_blank") личном кабинете], но не позднее, чем за один день до начала занятия.
+					table(style="width: 100%").emailBlack-profile
+						tr
+							td
+								table(align="center").emailBlack__container.emailBlack-profile__container
+									tr
+										td
+											table(style="width: 100%;").emailBlack__headOuter.emailBlack-profile__headOuter 
+												td(style="width: 250px")
+													h1.emailBlack__h1.emailBlack-profile__h1 Личный кабинет
+												td(style="padding-left: 10px;")
+													.emailBlack__line.emailBlack-profile__line
+									tr
+										td(style="padding-top: 40px; line-height: 1.3")
+											span.emailBlack-profile__text #[span.emailBlack-profile__span_bold Адрес:] #[a.emailBlack__link.emailBlack-profile__link(href="#" target="_blank") https://www.v-concept.ru/login]
+											br
+											span.emailBlack-profile__text #[span.emailBlack-profile__span_bold Логин:] admin
+											br
+											span.emailBlack-profile__text #[span.emailBlack-profile__span_bold Пароль:] guest123
+
+
+					table(style="width: 100%").emailBlack-contacts
+						tr
+							td
+								table(align="center").emailBlack__container.emailBlack-contacts__container
+									tr
+										td
+											table(style="width: 100%;").emailBlack__headOuter.emailBlack-contacts__headOuter 
+												td(style="width: 370px")
+													h1.emailBlack__h1.emailBlack-contacts__h1 Контактная информация
+												td(style="padding-left: 10px;")
+													.emailBlack__line.emailBlack-contacts__line
+									tr
+										td(style="padding-top: 40px; line-height: 1.3")
+											span.emailBlack-contacts__text #[span.emailBlack-contacts__span_bold Фамилия:] admin
+											br
+											span.emailBlack-contacts__text #[span.emailBlack-contacts__span_bold Имя:] system
+											br
+											span.emailBlack-contacts__text #[span.emailBlack-contacts__span_bold Email:] #[a.emailBlack__link.emailBlack-contacts__link_underlined(href="mailto:blinnikoff@mail.ru") blinnikoff@mail.ru]
+											br
+											span.emailBlack-contacts__text #[span.emailBlack-contacts__span_bold Телефон:] #[a.emailBlack__link.emailBlack-contacts__link(href="tel:+7 (906) 099-80-80") +7 (906) 099-80-80]
+									tr
+										td(style="padding-top: 40px;")
+											p.emailBlack-contacts__dopText Если у вас возникают вопросы, пожалуйста, напишите нам на почту или позвоните.
+									tr
+										td(style="padding-top: 30px;")
+											p.emailBlack-contacts__dopText|Мы всегда с Вами.
+												br
+												|Ваша команда #[span.emailBlack-contacts__dopText_bold V_CONCEPT]
+												br
+												|#[span.emailBlack-contacts__dopText_bold Время работы: каждый день с 12-20]
+					table(style="width: 100%; margin-top: 15px; padding-top: 120px").emailBlack-map
+						tr
+							td
+								table(align="center").emailBlack__container.emailBlack-map__container
+									tr
+										td.emailBlack-map__col1
+											img(src="img/emailWhite/emailWhite-map__icon1.png", alt="emailWhite-map__icon1.png" style="margin-top: 5px")
+										td
+											.emailBlack-map__text_bold +7 (499)-125-32-25
+									tr
+										td.emailBlack-map__col1
+											img(src="img/emailWhite/emailWhite-map__icon2.png", alt="emailWhite-map__icon2.png")
+										td
+											.emailBlack-map__text|Москва, Звенигородское
+												br
+												|шоссе, 3
+									tr
+										td.emailBlack-map__col1
+											img(src="img/emailWhite/emailWhite-map__icon3.png", alt="emailWhite-map__icon3.png")
+										td
+											.emailBlack-map__text info@v-concept.ru
+									tr
+										td.emailBlack-map__col1
+											img(src="img/emailWhite/emailWhite-map__icon4.png", alt="emailWhite-map__icon4.png")
+										td
+											.emailBlack-map__text|Время работы: 10:00-20:00
+												br
+												|(в выходные 10:00-17:00)
+					table(style="width: 100%").emailBlack-footer
+						tr
+							td
+								table(align="center").emailBlack__container.emailBlack-footer__container
+									td
+										table(align="left")
+											td.emailBlack-footer__textOuter
+												p.emailBlack-footer__text|Вы получили это письмо, потому что 
+													br
+													|Ваш email был указан 
+													br
+													|на сайте #[a.emailBlack-footer__link(href="https://www.v-concept.ru" target="_blank") www.v-concept.ru]
+												.emailBlack-footer__copyText
+													span.emailBlack-footer__span &copy; 2018 www.v-concept.ru
+										table(align="right")
+											td.emailBlack__socials.emailBlack-footer__socials
+												table.emailBlack__social.emailBlack-footer__social
+													td(align="center")
+														a(href="#" target="_blank")
+															img.emailBlack__imgSocial.emailBlack-footer__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial1_red.png", alt="emailWhite-headerTop__imgSocial1_red.png")
+											td.emailBlack__socials.emailBlack-footer__socials
+												table.emailBlack__social.emailBlack-footer__social
+													td(align="center")
+														a(href="#" target="_blank")
+															img.emailBlack__imgSocial.emailBlack-footer__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial2_red.png", alt="emailWhite-headerTop__imgSocial2_red.png")
+											td.emailBlack__socials.emailBlack-footer__socials
+												table.emailBlack__social.emailBlack-footer__social
+													td(align="center")
+														a(href="#" target="_blank")
+															img.emailBlack__imgSocial.emailBlack-footer__imgSocial(src="img/emailWhite/emailWhite-headerTop__imgSocial3_red.png", alt="emailWhite-headerTop__imgSocial3_red.png")
+

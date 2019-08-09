@@ -143,15 +143,15 @@ body table.emailWhite-wrapper .emailWhite__container {
 }
 
 body table.emailWhite-wrapper .emailWhite-header {
-  padding-bottom: 17%;
-  background-image: url("../img/emailWhite/emailWhite__header-bg.png");
+  padding-bottom: 10%;
+  background-image: url("../img/emailWhite/emailWhite__header-bg2.jpg");
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;
 }
 
 body table.emailWhite-wrapper .emailWhite-header .emailWhite-headerTop {
-  padding-top: 35px;
+  padding-top: 30px;
 }
 
 body table.emailWhite-wrapper .emailWhite-header .emailWhite-headerTop .emailWhite-headerTop__container img.emailWhite-headerTop__logo {

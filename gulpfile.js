@@ -9,7 +9,8 @@ var gulp          = require('gulp'),
 		rename        = require('gulp-rename'),
 		autoprefixer  = require('gulp-autoprefixer'),
 		notify        = require('gulp-notify'),
-		rsync         = require('gulp-rsync');
+		rsync         = require('gulp-rsync'),
+		inlineCss     = require('gulp-inline-css');
 
 gulp.task('browser-sync', function() {
 	browserSync({
@@ -64,6 +65,7 @@ gulp.task('html:dev', function(){
         .pipe(pug({
             pretty: true
         }))
+        .pipe(inlineCss())
         .pipe(gulp.dest('app'))
         .pipe(browserSync.reload({stream: true}))
 });
@@ -72,11 +74,13 @@ gulp.task('html:build', function(){
         .pipe(pug({
             pretty: true
         }))
+        .pipe(inlineCss())
         .pipe(gulp.dest('dist'))
 });
 gulp.task('html:build-min', function(){
     return gulp.src('app/*.pug')
         .pipe(pug())
+        .pipe(inlineCss())
         .pipe(gulp.dest('dist-min'))
 });
 
