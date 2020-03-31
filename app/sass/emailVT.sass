@@ -1,0 +1,210 @@
+@import "vars"
+@import "fonts"
+
+body
+	margin: 0
+	padding: 0
+	a.emailVT__link
+		text-decoration: none
+		outline: none
+		color: #ff2e2f
+	table.emailVT-wrapper
+		background-color: #F8F8F8 !important
+		max-width: 1000px
+		width: 100%
+		margin-top: 0
+		margin-bottom: 0
+		padding: 0
+		margin-left: auto
+		margin-right: auto
+		border-spacing: 0
+		table.emailVT-header, table.emailVT-genInf, table.emailVT-order, table.emailVT-schedule, table.emailVT-profile, table.emailVT-contacts, table.emailVT-map, table.emailVT-footer
+			padding-left: 10px
+			padding-right: 10px
+		table
+			border-spacing: 0
+			td, th, tr
+				padding: 0
+				margin: 0
+		.emailVT__socials
+			a.emailVT__social
+				display: inline-block
+				text-align: center
+				margin-left: 10px
+				width: 53px
+				height: 53px
+				line-height: 50px
+				border-width: 1px
+				border-style: solid
+				border-color: #656A6C
+				border-radius: 50%
+				img.emailVT__imgSocial
+					display: inline-block
+					vertical-align: middle
+		.emailVT__container
+			max-width: 600px !important
+			width: 100%
+			padding: 0 15px
+			margin-left: auto !important
+			margin-right: auto !important
+		.emailVT-header
+			background-color: #262626
+			.emailVT-headerTop
+				padding-top: 32px
+				padding-bottom: 32px
+				.emailVT-headerTop__container
+					img.emailVT-headerTop__logo
+						margin-top: 5px
+					.emailVT-headerTop__socials
+						a.emailVT-headerTop__social
+							display: inline-block
+							text-align: center
+							margin-left: 10px
+							width: 53px
+							height: 53px
+		.emailVT-mainInf
+			padding-top: 45px
+			.emailVT-mainInf__container
+				h1.emailVT-mainInf__h1
+					margin: 0
+					font-family: 'Verdana', sans-serif
+					font-size: 39px
+					font-weight: bold
+					letter-spacing: -1.5px 
+					color: #FF2E2F
+				p.emailVT-mainInf__p
+					margin-top: 20px
+					margin-bottom: 20px
+					font-family: 'Verdana', sans-serif
+					font-size: 20px
+					font-weight: normal
+					letter-spacing: -1px 
+					color: #373737
+				.emailVT-mainInf__lineR
+					width: 66px
+					height: 4px
+					background-color: #FF2E2F
+				img.emailVT-mainInf__iMac
+					width: 390px
+					margin-top: 30px
+					margin-bottom: 10px
+		.emailVT-needful
+			.emailVT-needful__container
+				padding-top: 30px
+				.emailVT-needful__h2
+					margin: 0
+					margin-bottom: 28px
+					font-family: 'Verdana', snas-serif
+					font-size: 30px
+					font-weight: bold
+					letter-spacing: -1px
+					color: #373737
+				.emailVT-needful__lineR
+					margin-right: 34px
+					width: 4px
+					height: 140px
+					background-color: #FF2E2F
+				.emailVT-needful__text
+					font-family: 'Verdana'
+					font-size: 18px
+					font-weight: normal
+					color: #373737
+					margin-bottom: 6px
+				table.emailWhite-needful__buttonPay
+					transition: 0.3s
+					margin-top: 36px
+					margin-bottom: 30px
+					margin-left: auto
+					margin-right: auto
+					text-transform: uppercase
+					background-color: #ff2e2f
+					border-radius: 37px
+					height: 74px
+					text-align: center
+					a
+						padding: 30px
+						text-decoration: none
+						font-family: 'Verdana', sans-serif
+						font-weight: bold
+						font-size: 14px
+						color: #ffffff
+
+		.emailVT-map
+			background-image: url('../img/emailVT/emailVT-map__imgBg.jpg')
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			.emailVT-map__container
+				.emailVT-map__text
+					font-family: 'Verdana'
+					font-weight: normal
+					font-size: 17px
+					color: #333333
+					letter-spacing: -1px
+				.emailVT-map__text_bold
+					font-family: 'Verdana'
+					font-weight: bold
+					font-size: 20px
+					color: #333333
+					letter-spacing: -2px
+				td
+					padding-bottom: 30px
+					vertical-align: top
+					img 
+						margin-top: 2px
+				.emailVT-map__col1	
+					width: 50px
+		.emailVT-footer
+			background-color: #212121 !important
+			padding-top: 47.5px
+			padding-bottom: 47.5px
+			.emailVT-footer__container
+				.emailVT-footer__textOuter
+					p.emailVT-footer__text
+						margin: 0
+						font-family: 'Verdana', sans-serif
+						font-size: 15px
+						font-weight: normal
+						color: #ffffff
+						opacity: 0.75
+						line-height: 1.2
+						a.emailVT-footer__link
+							text-decoration: none
+							border-bottom-width: 1px
+							border-bottom-style: solid
+							color: #ffffff
+					.emailVT-footer__copyText
+						padding-top: 15px
+						span.emailVT-footer__span
+							font-family: 'Verdana', sans-serif
+							font-size: 15px
+							font-weight: normal
+							color: #ffffff !important
+							opacity: 0.75
+				.emailVT-footer__socials
+					padding-top: 15px
+					width: 53px
+					.emailVT-footer__social
+						border-width: 1px
+						border-style: solid
+						border-color: #656A6C
+						transition: 0.5s
+						text-align: center
+						margin-left: 10px
+						width: 53px
+						height: 53px
+						border-radius: 50%
+						a
+							padding: 10px
+						img.emailVT__imgSocial
+							vertical-align: middle
+						img.emailVT-footer__imgSocial
+							transition: 0.5s
+					.emailVT-footer__social:hover
+						border-width: 1px
+						border-style: solid
+						border-color: #ff2e2e
+						background-color: #ff2e2e
+						img.emailVT-footer__imgSocial
+							filter: brightness(10)
+							-webkit-filter: brightness(10)

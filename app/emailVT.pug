@@ -1,0 +1,131 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+
+		title Email-videotraining
+		meta(name="description" content="")
+		meta(name="keywords" content="")
+		meta(name="author" content="Front-end by unTsar")
+		meta(name="robots" content="index, follow")
+
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+
+
+		link(rel="stylesheet", href="css/emailVT.css")
+	body
+		table.emailVT-wrapper
+			tr
+				td(style="padding: 0px")
+					table(style="width: 100%").emailVT-header
+						tr
+							td.emailVT-headerTop
+								table(align="center").emailVT__container.emailVT-headerTop__container
+									td
+										table.emailVT-headerTop__logoOuter(style="width: 205px;" align="left")
+											td
+												img.emailVT-headerTop__logo(src="img/emailVT/emailVT-logo.png", alt="emailVT-logo.png")
+										table.emailVT__socials.emailVT-headerTop__socials(style="width: 190px;" align="right")
+											td
+												a.emailVT-headerTop__social(href="#" target="_blank")
+													img.emailVT__imgSocial.emailVT-headerTop__imgSocial(src="img/emailVT/emailVT-headerTop__imgSocial_circle1.png", alt="emailVT-headerTop__imgSocial_circle1.png")
+												a.emailVT-headerTop__social(href="#" target="_blank")
+													img.emailVT__imgSocial.emailVT-headerTop__imgSocial(src="img/emailVT/emailVT-headerTop__imgSocial_circle2.png", alt="emailVT-headerTop__imgSocial_circle2.png")
+												a.emailVT-headerTop__social(href="#" target="_blank")
+													img.emailVT__imgSocial.emailVT-headerTop__imgSocial(src="img/emailVT/emailVT-headerTop__imgSocial_circle3.png", alt="emailVT-headerTop__imgSocial_circle3.png")
+					table(style="width: 100%").emailVT-mainInf
+						tr
+							td
+								table(align="center").emailVT__container.emailVT-mainInf__container
+									tr
+										td(align="center")
+											h1.emailVT-mainInf__h1 1-ая тренировка онлайн
+									tr
+										td(align="center")
+											p.emailVT-mainInf__p уже доступна в вашем личном кабинете
+									tr
+										td(align="center")
+											.emailVT-mainInf__lineR
+									tr
+										td(align="center")
+											img.emailVT-mainInf__iMac(src="img/emailVT/emailVT-mainInf__iMac.png", alt="emailVT-mainInf__iMac.png")
+					table(style="width: 100%").emailVT-needful
+						tr
+							td
+								table(align="center").emailVT__container.emailVT-needful__container
+									tr
+										td(colspan="2" style="width: 100%")
+											h2.emailVT-needful__h2 Какое оборудование понадобится
+									tr
+										td(colspan="1")
+											.emailVT-needful__lineR
+										td(colspan="1")
+											.emailVT-needful__text коврик (или любое мягкое покрытие)
+											.emailVT-needful__text гантели (или две бутылки воды по 0,5 л)
+											.emailVT-needful__text стул
+											.emailVT-needful__text резинка (у кого нет, можно без)
+											.emailVT-needful__text таймер
+									tr
+										td(colspan="2")
+											table.emailWhite-needful__buttonPay(onmouseover="this.style.boxShadow='0px 0px 20px #ff2e2f'" onmouseout="this.style.boxShadow='none'")
+												td(align="center")
+													a(href="#" target="_blank") НАЧАТЬ ТРЕНИРОВКУ
+					table(style="width: 100%; padding-top: 120px").emailVT-map
+						tr
+							td
+								table(align="center").emailVT__container.emailVT-map__container
+									tr
+										td.emailVT-map__col1
+											img(src="img/emailVT/emailVT-map__icon1.png", alt="emailVT-map__icon1.png" style="margin-top: 5px")
+										td
+											.emailVT-map__text_bold +7 (499)-125-32-25
+									tr
+										td.emailVT-map__col1
+											img(src="img/emailVT/emailVT-map__icon2.png", alt="emailVT-map__icon2.png")
+										td
+											.emailVT-map__text|Москва, Звенигородское
+												br
+												|шоссе, 3
+									tr
+										td.emailVT-map__col1
+											img(src="img/emailVT/emailVT-map__icon3.png", alt="emailVT-map__icon3.png")
+										td
+											.emailVT-map__text info@v-concept.ru
+									tr
+										td.emailVT-map__col1
+											img(src="img/emailVT/emailVT-map__icon4.png", alt="emailVT-map__icon4.png")
+										td
+											.emailVT-map__text|Время работы: 10:00-20:00
+												br
+												|(в выходные 10:00-17:00)
+					table(style="width: 100%").emailVT-footer
+						tr
+							td
+								table(align="center").emailVT__container.emailVT-footer__container
+									td
+										table(align="left")
+											td.emailVT-footer__textOuter
+												p.emailVT-footer__text|Вы получили это письмо, потому что 
+													br
+													|Ваш email был указан 
+													br
+													|на сайте #[a.emailVT-footer__link(href="https://www.v-concept.ru" target="_blank") www.v-concept.ru]
+												.emailVT-footer__copyText
+													span.emailVT-footer__span &copy; 2020 www.v-concept.ru
+										table(align="right")
+											td.emailVT__socials.emailVT-footer__socials
+												table.emailVT__social.emailVT-footer__social
+													td(align="center")
+														a(href="#" target="_blank")
+															img.emailVT__imgSocial.emailVT-footer__imgSocial(src="img/emailVT/emailVT-headerTop__imgSocial1_red.png", alt="emailVT-headerTop__imgSocial1_red.png")
+											td.emailVT__socials.emailVT-footer__socials
+												table.emailVT__social.emailVT-footer__social
+													td(align="center")
+														a(href="#" target="_blank")
+															img.emailVT__imgSocial.emailVT-footer__imgSocial(src="img/emailVT/emailVT-headerTop__imgSocial2_red.png", alt="emailVT-headerTop__imgSocial2_red.png")
+											td.emailVT__socials.emailVT-footer__socials
+												table.emailVT__social.emailVT-footer__social
+													td(align="center")
+														a(href="#" target="_blank")
+															img.emailVT__imgSocial.emailVT-footer__imgSocial(src="img/emailVT/emailVT-headerTop__imgSocial3_red.png", alt="emailVT-headerTop__imgSocial3_red.png")
