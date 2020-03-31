@@ -237,7 +237,7 @@ body table.emailVT-wrapper .emailVT-needful .emailVT-needful__container table.em
 }
 
 body table.emailVT-wrapper .emailVT-map {
-  background-image: url("../img/emailVT/emailVT-map__imgBg.jpg");
+  background-image: url("img/emailVT/emailVT-map__imgBg.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
