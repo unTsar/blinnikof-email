@@ -74,7 +74,7 @@ body a.emailBlack__link {
 }
 
 body table.emailBlack-wrapper {
-  background-image: url("../img/emailBlack/emailBlack__imgBg.jpg");
+  background-image: url("img/emailBlack/emailBlack__imgBg.jpg");
   -webkit-background-size: contain;
           background-size: contain;
   background-repeat: repeat-y;
@@ -174,7 +174,7 @@ body table.emailBlack-wrapper .emailBlack__container {
 
 body table.emailBlack-wrapper .emailBlack-header {
   padding-bottom: 8%;
-  background-image: url("../img/emailBlack/emailBlack__header-bg2.png");
+  background-image: url("img/emailBlack/emailBlack__header-bg2.png");
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;
@@ -468,7 +468,7 @@ body table.emailBlack-wrapper .emailBlack-contacts .emailBlack-contacts__contain
 }
 
 body table.emailBlack-wrapper .emailBlack-map {
-  background-image: url("../img/emailBlack/emailBlack-map__imgBg.png");
+  background-image: url("img/emailBlack/emailBlack-map__imgBg.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -505,7 +505,7 @@ body table.emailBlack-wrapper .emailBlack-map .emailBlack-map__container .emailB
 }
 
 body table.emailBlack-wrapper .emailBlack-footer {
-  background-image: url("../img/emailBlack/emailBlack-footer__imgBg.jpg");
+  background-image: url("img/emailBlack/emailBlack-footer__imgBg.jpg");
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;

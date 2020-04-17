@@ -144,7 +144,7 @@ body table.emailWhite-wrapper .emailWhite__container {
 
 body table.emailWhite-wrapper .emailWhite-header {
   padding-bottom: 10%;
-  background-image: url("../img/emailWhite/emailWhite__header-bg2.jpg");
+  background-image: url("img/emailWhite/emailWhite__header-bg2.jpg");
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;
@@ -433,7 +433,7 @@ body table.emailWhite-wrapper .emailWhite-contacts .emailWhite-contacts__contain
 }
 
 body table.emailWhite-wrapper .emailWhite-map {
-  background-image: url("../img/emailWhite/emailWhite-map__imgBg.jpg");
+  background-image: url("img/emailWhite/emailWhite-map__imgBg.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
